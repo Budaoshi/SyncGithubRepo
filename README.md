@@ -3,7 +3,8 @@
 一个简单的仓库同步工具，不支持多目录结构，Golang 语言实现。
 
 **实现原理**
-参照 `GitHub`提供的 [Get contents](https://developer.github.com/v3/repos/contents/#get-contents) 和 [Create an issue](https://developer.github.com/v3/issues/#create-an-issue) 接口，拉去两个仓库的内容，并对各个文件的的 `SHA`做对比。若两个仓库文件有增加、删除、修改等，会在本地仓库创建相应的 `issue`。
+
+参照 `GitHub`提供的 [Get contents](https://developer.github.com/v3/repos/contents/#get-contents) 和 [Create an issue](https://developer.github.com/v3/issues/#create-an-issue) 接口，拉取两个仓库的内容，并对各个文件的的 `SHA`做对比。若两个仓库文件有增加、删除、修改等，会在本地仓库创建相应的 `issue`。
 
 **使用方法**
 - 为`sys_repo`设置运行权限：
